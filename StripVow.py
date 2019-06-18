@@ -1,3 +1,4 @@
+n=input()
 s=str(input())
 vowels="aeiou"
 i=len(s)-1
