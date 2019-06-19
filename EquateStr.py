@@ -6,7 +6,6 @@ if len(inp[0])!=len(inp[1]):
 elif inp[0]==inp[1]:
     print("yes")
 else:
-    a=True
     i=0
     l=len(inp[0])
     while(i<=l):
@@ -17,8 +16,9 @@ else:
             inp[0].replace("",ch)
             inp[1].replace("",ch)
         if leng<0:
-            a=False
-            print("no")
+            break
         i+=1
-    if a:
+    if leng==0:
         print("yes")
+    else:
+        print("no")
