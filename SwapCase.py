@@ -1,1 +1,1 @@
-print(input().swapcase())
+print("".join(input().split()))
