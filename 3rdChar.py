@@ -1,5 +1,5 @@
 s=str(input())
 i=0
 while(i<len(s)):
-    print(s[i],end=" ")
+    print(s[i],end="")
     i+=3
