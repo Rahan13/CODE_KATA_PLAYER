@@ -1,10 +1,13 @@
-s=list(str(input()).split())
-s="".join(s)
-l=len(s)
-i=0
-while(i<l):
-    if s.lower().count(s[i].lower())==1:
-        print(s[i],end=" ")
-        s.replace(s[i],"")
-        l=len(s)
-    i+=1
+num=input().split()
+num=list(map(int,num))
+if num[0]%num[1] !=0:
+    print("no")
+else:
+    while(True):
+        num[0]=int(num[0]/num[1])
+        if num[0]==num[1] or num[0]==1:
+            print("yes")
+            break
+        if num[0]==0 or num[0]%num[1]!=0:
+            print("no")
+            break
