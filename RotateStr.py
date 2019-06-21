@@ -4,4 +4,4 @@ d=dict()
 for i in range(0,len(s1)):
     pos=(i+int(strgs[1]))%len(s1)
     d.update({pos:s1[i]})
-[print(d[i],end=" ") for i in d]
+[print(d[i],end="") for i in d]
