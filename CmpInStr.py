@@ -1,5 +1,5 @@
 inp = input().split()
-if inp[0]==inp[1]:
+if inp[0].lower()==inp[1].lower():
     print("yes")
 else:
     print("no")
